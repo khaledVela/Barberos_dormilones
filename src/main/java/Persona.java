@@ -2,14 +2,14 @@ public class Persona {
 boolean cortar=false;
 boolean espera=false;
 boolean paga=false;
-int tiempo= (int) Math.random()*10;
+int tipoCorte = (int) Math.random()*2+1;
 
-    public int getTiempo() {
-        return tiempo;
+    public int getTipoCorte() {
+        return tipoCorte;
     }
 
-    public void setTiempo(int tiempo) {
-        this.tiempo = tiempo;
+    public void setTipoCorte(int tipoCorte) {
+        this.tipoCorte = tipoCorte;
     }
 
     public boolean getCortar() {
@@ -28,7 +28,7 @@ int tiempo= (int) Math.random()*10;
         this.espera = espera;
     }
 
-    public boolean isPaga() {
+    public boolean getPaga() {
         return paga;
     }
 
